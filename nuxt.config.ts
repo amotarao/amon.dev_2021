@@ -26,10 +26,23 @@ const config: Configuration = {
   css: ['~/assets/styles/global.scss'],
   plugins: [],
   components: true,
-  buildModules: ['@nuxt/typescript-build', '@nuxtjs/stylelint-module', '@nuxtjs/style-resources'],
+  buildModules: [
+    '@nuxt/typescript-build',
+    '@nuxtjs/stylelint-module',
+    '@nuxtjs/style-resources',
+    '@nuxtjs/fontawesome',
+  ],
   modules: ['@nuxt/content'],
   styleResources: {
     scss: ['~assets/styles/_variables.scss', '~assets/styles/_mixins/_media-query.scss'],
+  },
+  fontawesome: {
+    addCss: false,
+    component: 'Fa',
+    suffix: true,
+    icons: {
+      brands: ['faTwitter', 'faGithub'],
+    },
   },
   content: {
     dir: '../content',

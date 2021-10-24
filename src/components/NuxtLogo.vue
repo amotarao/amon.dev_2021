@@ -7,6 +7,12 @@
   </svg>
 </template>
 
+<script lang="ts">
+import Vue from 'vue';
+
+export default Vue.extend({});
+</script>
+
 <style>
 .nuxt-logo {
   height: 180px;

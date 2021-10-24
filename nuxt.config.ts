@@ -21,8 +21,11 @@ const config: Configuration = {
   css: ['~/assets/styles/global.scss'],
   plugins: [],
   components: true,
-  buildModules: ['@nuxt/typescript-build', '@nuxtjs/stylelint-module'],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/stylelint-module', '@nuxtjs/style-resources'],
   modules: ['@nuxt/content'],
+  styleResources: {
+    scss: ['~assets/styles/_mixins.scss'],
+  },
   content: {
     dir: '../content',
   },

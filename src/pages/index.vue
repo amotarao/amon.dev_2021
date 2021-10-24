@@ -8,7 +8,7 @@
           <a :class="$style.link_link" href="https://twitter.com/amotarao"><FaIcon :icon="['fab', 'twitter']" /></a>
         </li>
         <li :class="$style.link_item">
-          <a :class="$style.link_link" href="http://github.com/amotarao"><FaIcon :icon="['fab', 'github']" /></a>
+          <a :class="$style.link_link" href="https://github.com/amotarao"><FaIcon :icon="['fab', 'github']" /></a>
         </li>
       </ul>
     </section>

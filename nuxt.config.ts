@@ -24,7 +24,7 @@ const config: Configuration = {
   buildModules: ['@nuxt/typescript-build', '@nuxtjs/stylelint-module', '@nuxtjs/style-resources'],
   modules: ['@nuxt/content'],
   styleResources: {
-    scss: ['~assets/styles/_mixins.scss'],
+    scss: ['~assets/styles/_variables.scss', '~assets/styles/_mixins/_media-query.scss'],
   },
   content: {
     dir: '../content',

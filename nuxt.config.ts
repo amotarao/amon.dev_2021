@@ -1,4 +1,6 @@
 import { Configuration } from '@nuxt/types';
+import Sass from 'sass';
+import Fiber from 'fibers';
 
 const config: Configuration = {
   srcDir: 'src',
@@ -24,7 +26,16 @@ const config: Configuration = {
   content: {
     dir: '../content',
   },
-  build: {},
+  build: {
+    loaders: {
+      scss: {
+        implementation: Sass,
+        sassOptions: {
+          fiber: Fiber,
+        },
+      },
+    },
+  },
 };
 
 export default config;

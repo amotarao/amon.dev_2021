@@ -18,7 +18,7 @@ const config: Configuration = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  css: [],
+  css: ['~/assets/styles/global.scss'],
   plugins: [],
   components: true,
   buildModules: ['@nuxt/typescript-build', '@nuxtjs/stylelint-module'],

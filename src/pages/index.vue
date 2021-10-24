@@ -32,6 +32,10 @@ export default Vue.extend({});
 .title {
   grid-area: title;
   align-self: flex-end;
+  font-family: $urbanist;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
 }
 
 .link_list {

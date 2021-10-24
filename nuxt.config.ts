@@ -6,9 +6,9 @@ const config: Configuration = {
   srcDir: 'src',
   target: 'static',
   head: {
-    title: 'amon.house',
+    title: 'Amon Sawamura',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ja-JP',
     },
     meta: [
       { charset: 'utf-8' },
@@ -19,7 +19,7 @@ const config: Configuration = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
       {
         href: 'https://fonts.googleapis.com/css2?family=Urbanist:wght@500&family=Zen+Kaku+Gothic+New&display=swap',
         rel: 'stylesheet',

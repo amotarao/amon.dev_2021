@@ -1,0 +1,31 @@
+@mixin greater-than($width) {
+  @if unitless($width) {
+    $width: $width * 1px;
+  }
+
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin less-than($width) {
+  @if unitless($width) {
+    $width: $width * 1px;
+  }
+
+  @media screen and (max-width: #{$width - 1px}) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @include less-than($breakpoint) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @include greater-than($breakpoint) {
+    @content;
+  }
+}

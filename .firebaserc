@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "amotarao-2a8b6"
+  },
+  "targets": {
+    "amotarao-2a8b6": {
+      "hosting": {
+        "website": [
+          "amonhouse2021"
+        ]
+      }
+    }
+  }
+}

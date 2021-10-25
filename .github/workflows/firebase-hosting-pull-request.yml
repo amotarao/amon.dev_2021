@@ -15,3 +15,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_AMOTARAO_2A8B6 }}'
           projectId: amotarao-2a8b6
+          target: amonhouse2021

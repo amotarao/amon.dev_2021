@@ -1,0 +1,34 @@
+{
+  "hosting": [
+    {
+      "target": "website",
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "headers": [
+        {
+          "source": "**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-store, no-cache"
+            }
+          ]
+        },
+        {
+          "source": "_nuxt/**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=604800"
+            }
+          ]
+        }
+      ],
+      "trailingSlash": false
+    }
+  ]
+}

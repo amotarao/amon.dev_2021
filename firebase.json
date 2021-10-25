@@ -1,0 +1,34 @@
+{
+  "hosting": [
+    {
+      "target": "amonhouse2021",
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "headers": [
+        {
+          "source": "_nuxt/**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=604800"
+            }
+          ]
+        },
+        {
+          "source": "**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-store, no-cache"
+            }
+          ]
+        }
+      ],
+      "trailingSlash": false
+    }
+  ]
+}

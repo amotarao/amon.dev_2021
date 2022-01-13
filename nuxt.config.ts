@@ -34,6 +34,7 @@ const config: Configuration = {
     '@nuxtjs/stylelint-module',
     '@nuxtjs/style-resources',
     '@nuxtjs/fontawesome',
+    '@nuxtjs/google-analytics',
   ],
   modules: ['@nuxt/content'],
   styleResources: {
@@ -47,8 +48,16 @@ const config: Configuration = {
       brands: ['faTwitter', 'faGithub'],
     },
   },
+  googleAnalytics: {
+    id: 'UA-62256752-8',
+  },
   content: {
     dir: '../content',
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: 'UA-62256752-8',
+    },
   },
   build: {
     loaders: {

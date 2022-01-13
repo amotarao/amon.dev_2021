@@ -93,7 +93,7 @@ const config: Configuration = {
     '@nuxtjs/style-resources',
     '@nuxtjs/fontawesome',
   ],
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', '@nuxtjs/google-gtag'],
   styleResources: {
     scss: ['~assets/styles/_variables.scss', '~assets/styles/_mixins/_media-query.scss'],
   },
@@ -107,6 +107,10 @@ const config: Configuration = {
   },
   content: {
     dir: '../content',
+  },
+  'google-gtag': {
+    id: 'G-4D9Z5ERM4D',
+    debug: true,
   },
   build: {
     loaders: {

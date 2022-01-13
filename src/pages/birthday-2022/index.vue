@@ -56,7 +56,7 @@
         >
       </div>
       <p class="hoshii-yukukuru">
-        <a href="/birthday-2022-yukukuru">ゆくくるユーザーには、ささやかですがお礼も用意しています 詳しくはこちら</a>
+        <a href="/birthday-2022/yukukuru">ゆくくるユーザーには、ささやかですがお礼も用意しています 詳しくはこちら</a>
       </p>
     </section>
     <footer class="footer">
@@ -82,7 +82,6 @@ export default Vue.extend({
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
         { href: 'https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap', rel: 'stylesheet' },
       ],
-      meta: [{ name: 'robots', content: 'noindex' }],
     };
   },
 });

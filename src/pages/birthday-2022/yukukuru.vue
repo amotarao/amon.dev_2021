@@ -18,7 +18,10 @@
       <div class="kokorogamae-body">
         <p>はじめまして / こんにちは</p>
         <p>ゆくくる開発の あもん / @amotarao です</p>
-        <p>いつもゆくくるをご利用いただきましてありがとうございます</p>
+        <p>
+          いつも<a href="https://yukukuru.app" target="_blank" rel="noopener">ゆくくる</a
+          >をご利用いただきましてありがとうございます
+        </p>
         <p>今年もゆくくるを維持できるような開発を少しずつ進めていきます</p>
         <p>引き続き活動を応援していただけると嬉しいです</p>
         <p><a href="/birthday-2022-yukukuru#oshirase">「お知らせ・お願い」</a>もぜひご覧ください</p>
@@ -52,9 +55,9 @@
         >
       </div>
     </section>
-    <section id="oshirase" class="kokorogamae-section">
-      <h2 class="kokorogamae-head">お知らせ・お願い</h2>
-      <div class="kokorogamae-body">
+    <section id="oshirase" class="oshirase-section">
+      <h2 class="oshirase-head">お知らせ・お願い</h2>
+      <div class="oshirase-body">
         <p>まだ不完全なシステムなため、バグ等で表示に問題を起こしてしまっていることがあります</p>
         <p>ご不便をおかけして申し訳ありません</p>
         <p>
@@ -65,6 +68,18 @@
         <p>
           リストのなにかを贈っていただいたユーザーさまに、ささやかではありますが、開発中の「複数アカウント切替え機能」を期間限定でご提供いたします
         </p>
+        <div class="oshirase-image">
+          <img
+            src="~/assets/images/birthday-2022/yukukuru-multi.png"
+            srcset="
+              ~/assets/images/birthday-2022/yukukuru-multi.png    1x,
+              ~/assets/images/birthday-2022/yukukuru-multi@2x.png 2x
+            "
+            width="375"
+            height="200"
+            alt="ゆくくる 複数アカウント切替え機能のイメージ"
+          />
+        </div>
       </div>
       <section class="nagare-section">
         <h3 class="nagare-head">流れ</h3>
@@ -166,7 +181,6 @@ export default Vue.extend({
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
         { href: 'https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap', rel: 'stylesheet' },
       ],
-      meta: [{ name: 'robots', content: 'noindex' }],
     };
   },
 });
@@ -219,17 +233,20 @@ $blue-grey-900: #263238;
   text-align: center;
 }
 
-.kokorogamae-section {
+.kokorogamae-section,
+.oshirase-section {
   padding: 4rem 2rem;
 }
 
-.kokorogamae-head {
+.kokorogamae-head,
+.oshirase-head {
   margin-bottom: 2rem;
   font-size: 1.5rem;
   text-align: center;
 }
 
-.kokorogamae-body {
+.kokorogamae-body,
+.oshirase-body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -238,12 +255,26 @@ $blue-grey-900: #263238;
   font-size: 0.9rem;
   text-align: center;
 
-  + .kokorogamae-body {
+  + .kokorogamae-body,
+  + .oshirase-body {
     margin-top: 4rem;
   }
 
   a {
     text-decoration: underline;
+  }
+}
+
+.oshirase-image {
+  max-width: 100%;
+  margin: 2rem auto 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 

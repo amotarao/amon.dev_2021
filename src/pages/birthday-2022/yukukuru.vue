@@ -176,10 +176,36 @@ export default Vue.extend({
   head() {
     return {
       title: 'ゆくくる開発 あもんの誕生日2022',
+      meta: [
+        {
+          property: 'og:title',
+          content: 'ゆくくる開発 あもんの誕生日2022',
+          hid: 'og:title',
+        },
+        {
+          property: 'og:url',
+          content: `https://amon.dev/birthday-2022/yukukuru`,
+          hid: 'og:url',
+        },
+        {
+          name: 'thumbnail',
+          content: `https://amon.dev${require('~/assets/images/birthday-2022/ogp-yukukuru.jpg')}`,
+          hid: 'thumbnail',
+        },
+        {
+          property: 'og:image',
+          content: `https://amon.dev${require('~/assets/images/birthday-2022/ogp-yukukuru.jpg')}`,
+          hid: 'og:image',
+        },
+        {
+          name: 'twitter:image',
+          content: `https://amon.dev${require('~/assets/images/birthday-2022/ogp-yukukuru.jpg')}`,
+          hid: 'twitter:image',
+        },
+      ],
       link: [
-        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
         { href: 'https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap', rel: 'stylesheet' },
+        { rel: 'canonical', href: 'https://amon.dev/birthday-2022/yukukuru', hid: 'canonical' },
       ],
     };
   },

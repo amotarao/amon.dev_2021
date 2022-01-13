@@ -34,9 +34,8 @@ const config: Configuration = {
     '@nuxtjs/stylelint-module',
     '@nuxtjs/style-resources',
     '@nuxtjs/fontawesome',
-    '@nuxtjs/google-analytics',
   ],
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', '@nuxtjs/google-gtag'],
   styleResources: {
     scss: ['~assets/styles/_variables.scss', '~assets/styles/_mixins/_media-query.scss'],
   },
@@ -48,16 +47,12 @@ const config: Configuration = {
       brands: ['faTwitter', 'faGithub'],
     },
   },
-  googleAnalytics: {
-    id: 'UA-62256752-8',
-  },
   content: {
     dir: '../content',
   },
-  publicRuntimeConfig: {
-    googleAnalytics: {
-      id: 'UA-62256752-8',
-    },
+  'google-gtag': {
+    id: 'G-4D9Z5ERM4D',
+    debug: true,
   },
   build: {
     loaders: {

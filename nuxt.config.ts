@@ -109,7 +109,7 @@ const config: Configuration = {
     dir: '../content',
   },
   'google-gtag': {
-    id: 'G-4D9Z5ERM4D',
+    id: 'G-66Q4T2X9Q1',
     debug: true,
   },
   build: {

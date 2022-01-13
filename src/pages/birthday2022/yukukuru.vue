@@ -184,12 +184,12 @@ export default Vue.extend({
         },
         {
           name: 'description',
-          content: 'ゆくくる開発者の誕生日2022。お知らせとほしい物リストのご案内',
+          content: 'ゆくくる開発のあもんの誕生日2022。お知らせとほしい物リストのご案内',
           hid: 'description',
         },
         {
           property: 'og:description',
-          content: 'ゆくくる開発者の誕生日2022。お知らせとほしい物リストのご案内',
+          content: 'ゆくくる開発のあもんの誕生日2022。お知らせとほしい物リストのご案内',
           hid: 'og:description',
         },
         {

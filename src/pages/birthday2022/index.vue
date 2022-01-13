@@ -84,8 +84,18 @@ export default Vue.extend({
           hid: 'og:title',
         },
         {
+          name: 'description',
+          content: '2022年1月13日はあもんの26回目の誕生日！これがほしいあれがほしい！',
+          hid: 'description',
+        },
+        {
+          property: 'og:description',
+          content: '2022年1月13日はあもんの26回目の誕生日！これがほしいあれがほしい！',
+          hid: 'og:description',
+        },
+        {
           property: 'og:url',
-          content: `https://amon.dev/birthday2022`,
+          content: 'https://amon.dev/birthday2022',
           hid: 'og:url',
         },
         {

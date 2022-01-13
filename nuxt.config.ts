@@ -25,6 +25,11 @@ const config: Configuration = {
         hid: 'og:title',
       },
       {
+        property: 'og:description',
+        content: 'さわむらあもんのページ',
+        hid: 'og:description',
+      },
+      {
         property: 'og:site_name',
         content: 'Amon Sawamura',
       },

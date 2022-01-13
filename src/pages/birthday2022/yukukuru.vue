@@ -4,7 +4,7 @@
       <h1 class="title"><span>ゆくくる開発</span>あもんの誕生日2022</h1>
       <div class="image">
         <img
-          src="~/assets/images/birthday-2022/icon.png"
+          src="~/assets/images/birthday2022/icon.png"
           width="320"
           height="320"
           alt="あもんの画像 新潟県長岡の近くで"
@@ -24,7 +24,7 @@
         </p>
         <p>今年もゆくくるを維持できるような開発を少しずつ進めていきます</p>
         <p>引き続き活動を応援していただけると嬉しいです</p>
-        <p><a href="/birthday-2022-yukukuru#oshirase">「お知らせ・お願い」</a>もぜひご覧ください</p>
+        <p><a href="/birthday2022-yukukuru#oshirase">「お知らせ・お願い」</a>もぜひご覧ください</p>
         <p>今年もよろしくお願いいたします</p>
         <p>2022.1.13 あもん / @amotarao</p>
       </div>
@@ -70,10 +70,10 @@
         </p>
         <div class="oshirase-image">
           <img
-            src="~/assets/images/birthday-2022/yukukuru-multi.png"
+            src="~/assets/images/birthday2022/yukukuru-multi.png"
             srcset="
-              ~/assets/images/birthday-2022/yukukuru-multi.png    1x,
-              ~/assets/images/birthday-2022/yukukuru-multi@2x.png 2x
+              ~/assets/images/birthday2022/yukukuru-multi.png    1x,
+              ~/assets/images/birthday2022/yukukuru-multi@2x.png 2x
             "
             width="375"
             height="200"
@@ -184,28 +184,28 @@ export default Vue.extend({
         },
         {
           property: 'og:url',
-          content: `https://amon.dev/birthday-2022/yukukuru`,
+          content: `https://amon.dev/birthday2022/yukukuru`,
           hid: 'og:url',
         },
         {
           name: 'thumbnail',
-          content: `https://amon.dev${require('~/assets/images/birthday-2022/ogp-yukukuru.jpg')}`,
+          content: `https://amon.dev${require('~/assets/images/birthday2022/ogp-yukukuru.jpg')}`,
           hid: 'thumbnail',
         },
         {
           property: 'og:image',
-          content: `https://amon.dev${require('~/assets/images/birthday-2022/ogp-yukukuru.jpg')}`,
+          content: `https://amon.dev${require('~/assets/images/birthday2022/ogp-yukukuru.jpg')}`,
           hid: 'og:image',
         },
         {
           name: 'twitter:image',
-          content: `https://amon.dev${require('~/assets/images/birthday-2022/ogp-yukukuru.jpg')}`,
+          content: `https://amon.dev${require('~/assets/images/birthday2022/ogp-yukukuru.jpg')}`,
           hid: 'twitter:image',
         },
       ],
       link: [
         { href: 'https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap', rel: 'stylesheet' },
-        { rel: 'canonical', href: 'https://amon.dev/birthday-2022/yukukuru', hid: 'canonical' },
+        { rel: 'canonical', href: 'https://amon.dev/birthday2022/yukukuru', hid: 'canonical' },
       ],
     };
   },

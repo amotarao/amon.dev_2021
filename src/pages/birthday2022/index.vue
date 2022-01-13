@@ -4,7 +4,7 @@
       <h1 class="title">あもんの誕生日2022</h1>
       <div class="image">
         <img
-          src="~/assets/images/birthday-2022/icon.png"
+          src="~/assets/images/birthday2022/icon.png"
           width="320"
           height="320"
           alt="あもんの画像 新潟県長岡の近くで"
@@ -56,7 +56,7 @@
         >
       </div>
       <p class="hoshii-yukukuru">
-        <a href="/birthday-2022/yukukuru">ゆくくるユーザーには、ささやかですがお礼も用意しています 詳しくはこちら</a>
+        <a href="/birthday2022/yukukuru">ゆくくるユーザーには、ささやかですがお礼も用意しています 詳しくはこちら</a>
       </p>
     </section>
     <footer class="footer">
@@ -85,28 +85,28 @@ export default Vue.extend({
         },
         {
           property: 'og:url',
-          content: `https://amon.dev/birthday-2022`,
+          content: `https://amon.dev/birthday2022`,
           hid: 'og:url',
         },
         {
           name: 'thumbnail',
-          content: `https://amon.dev${require('~/assets/images/birthday-2022/ogp-index.jpg')}`,
+          content: `https://amon.dev${require('~/assets/images/birthday2022/ogp-index.jpg')}`,
           hid: 'thumbnail',
         },
         {
           property: 'og:image',
-          content: `https://amon.dev${require('~/assets/images/birthday-2022/ogp-index.jpg')}`,
+          content: `https://amon.dev${require('~/assets/images/birthday2022/ogp-index.jpg')}`,
           hid: 'og:image',
         },
         {
           name: 'twitter:image',
-          content: `https://amon.dev${require('~/assets/images/birthday-2022/ogp-index.jpg')}`,
+          content: `https://amon.dev${require('~/assets/images/birthday2022/ogp-index.jpg')}`,
           hid: 'twitter:image',
         },
       ],
       link: [
         { href: 'https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap', rel: 'stylesheet' },
-        { rel: 'canonical', href: 'https://amon.dev/birthday-2022', hid: 'canonical' },
+        { rel: 'canonical', href: 'https://amon.dev/birthday2022', hid: 'canonical' },
       ],
     };
   },

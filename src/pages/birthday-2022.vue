@@ -11,7 +11,7 @@
         />
       </div>
       <div class="body">
-        <p>2022年1月13日はあもんの26回目の誕生日!</p>
+        <p>2022年1月13日はあもんの26回目の誕生日！</p>
       </div>
     </div>
     <section class="kokorogamae-section">
@@ -90,7 +90,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 $green-100: #c8e6c9;
-$green-500: #4caf50;
 $blue-grey-100: #cfd8dc;
 $blue-grey-900: #263238;
 

@@ -1,8 +1,7 @@
 <template>
   <div>
-    <section :class="$style.section">
+    <nav :class="$style.nav">
       <h1 :class="$style.title">Amon Sawamura</h1>
-      <div :class="$style.image">ここになにか置きたい</div>
       <ul :class="$style.link_list">
         <li :class="$style.link_item">
           <a :class="$style.link_link" href="https://twitter.com/amotarao"><FaIcon :icon="['fab', 'twitter']" /></a>
@@ -11,6 +10,9 @@
           <a :class="$style.link_link" href="https://github.com/amotarao"><FaIcon :icon="['fab', 'github']" /></a>
         </li>
       </ul>
+    </nav>
+    <section :class="$style.section">
+      <div :class="$style.board">ここになにか置きたい</div>
     </section>
   </div>
 </template>
@@ -22,16 +24,20 @@ export default Vue.extend({});
 </script>
 
 <style lang="scss" module>
-.section {
+$bg-line-color: #eee;
+$bg-line-size: 24px;
+
+.nav {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: grid;
-  grid-template-areas:
-    'image image'
-    'title link_list';
-  grid-template-rows: 1fr auto;
+  grid-template-areas: 'title link_list';
+  grid-template-rows: auto;
   grid-template-columns: 1fr auto;
   gap: 1rem;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   padding: 2rem 1rem;
 
   @include pc {
@@ -55,19 +61,6 @@ export default Vue.extend({});
   }
 }
 
-.image {
-  display: grid;
-  grid-area: image;
-  place-items: center;
-  align-self: stretch;
-  justify-self: stretch;
-  font-family: $zen-kaku-gothic-new;
-  font-size: 0.8rem;
-  color: #999;
-  letter-spacing: 0.12em;
-  border: dashed 2px #999;
-}
-
 .link_list {
   display: flex;
   grid-area: link_list;
@@ -81,7 +74,7 @@ export default Vue.extend({});
   }
 }
 
-.link_itrem {
+.link_item {
   //
 }
 
@@ -103,5 +96,42 @@ export default Vue.extend({});
       height: 2.5rem;
     }
   }
+}
+
+.section {
+  display: grid;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  background-image: repeating-linear-gradient(
+      to right,
+      $bg-line-color 0px,
+      $bg-line-color 1px,
+      transparent 1px,
+      transparent $bg-line-size
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      $bg-line-color 0px,
+      $bg-line-color 1px,
+      transparent 1px,
+      transparent $bg-line-size
+    );
+
+  @include pc {
+    padding: 2rem 4rem;
+  }
+}
+
+.board {
+  display: grid;
+  place-items: center;
+  align-self: stretch;
+  justify-self: stretch;
+  height: 100%;
+  font-family: $zen-kaku-gothic-new;
+  font-size: 0.8rem;
+  color: #999;
+  letter-spacing: 0.12em;
 }
 </style>

@@ -110,7 +110,6 @@ const config: Configuration = {
   },
   'google-gtag': {
     id: 'G-66Q4T2X9Q1',
-    debug: true,
   },
   build: {
     loaders: {
